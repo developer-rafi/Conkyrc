@@ -1,0 +1,2 @@
+# Conkyrc
+Conky Script
