@@ -95,6 +95,7 @@ conky.config = {
 };
 
 conky.text = [[
+
 ${color6}${voffset 4}${font GE Inspira:size=36}${alignc}${time %l}:${time %M} ${time %p}${font}${color}
 ${color6}${voffset 4}${font GE Inspira:size=12}${alignc}${time %A} ${time %B} ${time %e}, ${time %Y}${font}${color}
 
@@ -111,6 +112,7 @@ ${color2}Uptime:${color} ${alignr}${uptime}
 ###Processor
 ###
 ${color5}${font Roboto:size=10}P R O C E S S O R S  ${hr 2}${font}${color}
+
 ${color2}CPU Usage:${color}$alignr $cpu% 
 ${offset 30}${cpubar 20,000}
 ${color2}CPU Freq:${color} $alignr${freq}MHz
@@ -122,7 +124,7 @@ ${voffset 4}     1  -  ${top name 1}${alignr}${goto 170} ${goto 222}${top cpu 1}
 ###Memory
 ###
 ${color5}${font Roboto:size=10}M E M O R Y   ${hr 2}${font}${color}
-${color2}${offset 30}RAM: ${color}${alignr}${offset -10}${mem} / ${memmax}${alignr}
+${color2}RAM: ${color}${alignr}${offset -10}${mem} / ${memmax}${alignr}
 ${offset 30}${memgraph 20,000}
 ${color2}Top Processes${goto 222}Mem${goto 274}mem%${color}
 ${voffset 4}     1  -  ${top_mem name 1}${alignr}${goto 170} ${goto 222}${top_mem cpu 1} ${goto 274}${top_mem mem 1}
@@ -132,7 +134,8 @@ ${voffset 4}     1  -  ${top_mem name 1}${alignr}${goto 170} ${goto 222}${top_me
 ###Network
 ###
 ${color5}${color5}${font Roboto:size=10}N E T W O R K   ${hr 2}${font}${color}
-${color2}${offset 30}IP Address: ${color} ${alignr}${offset -10$}${addrs wlx00e02d4c4ad3}
+
+${color2}${offset 30}IP : ${color} ${alignr}${offset -10$}${addrs wlx00e02d4c4ad3}
 ${color2}${offset 30}wlan Up:${color} ${alignr}${offset -10$}${upspeed wlx00e02d4c4ad3}${alignr}
 ${offset 30}${upspeedgraph wlx00e02d4c4ad3 20,000}
 ${color2}${offset 30}wlan Down:${color} ${alignr}${offset -10$}${downspeed wlx00e02d4c4ad3}${alignr}
